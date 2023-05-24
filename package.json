@@ -1,0 +1,28 @@
+{
+  "name": "tarefasapp",
+  "version": "1.0.0",
+  "description": "Servidor REST de tarefas em NodeJS",
+  "main": "server.js",
+  "dependencies": {
+    "express": "",
+    "sequelize": "",
+    "sqlite3": "",
+    "swagger-ui-express": "",
+    "swagger-autogen": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "start-with-swagger-autogen": "node swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfdouro/TarefasApp.git"
+  },
+  "author": "rfdouro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfdouro/TarefasApp/issues"
+  },
+  "homepage": "https://github.com/rfdouro/TarefasApp#readme"
+}
