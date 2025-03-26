@@ -24,7 +24,8 @@ const outputFile = "./swagger.json";
  * npm run swagger-autogen
  */
 swaggerAutogen(outputFile, endpointsFiles, {
-  host: 'tarefasappnode.onrender.com'
+  host: "tarefasappnode.onrender.com",
+  schemes: ["https"],
 }).then(() => {
   require("./main.js");
 });
