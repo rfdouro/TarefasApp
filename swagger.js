@@ -18,8 +18,8 @@ const outputFile = "./swagger.json";
  */
 //swaggerAutogen(outputFile, endpointsFiles);
 
-let hscheme = process.env.SHOST ? process.env.SHOST : 'localhost';
-let sscheme = process.env.SCHEME ? process.env.SCHEME : 'http';
+let hscheme = process.env.SHOST ? process.env.SHOST : "localhost";
+let sscheme = process.env.SCHEME ? process.env.SCHEME : "http";
 
 /*
  * aqui a documentação é gerada automaticamente e é iniciado o projeto
@@ -27,8 +27,8 @@ let sscheme = process.env.SCHEME ? process.env.SCHEME : 'http';
  * npm run swagger-autogen
  */
 swaggerAutogen(outputFile, endpointsFiles, {
-  host: hscheme,// "tarefasappnode.onrender.com",
-  schemes: [sscheme],// ["https"],
+  host: hscheme,
+  schemes: [sscheme],
 }).then(() => {
   require("./main.js");
 });
