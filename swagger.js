@@ -18,8 +18,8 @@ const outputFile = "./swagger.json";
  */
 //swaggerAutogen(outputFile, endpointsFiles);
 
-let hscheme = process.env.host ? process.env.host : 'localhost';
-let sscheme = process.env.scheme ? process.env.scheme : 'http';
+let hscheme = process.env.SHOST ? process.env.SHOST : 'localhost';
+let sscheme = process.env.SCHEME ? process.env.SCHEME : 'http';
 
 /*
  * aqui a documentação é gerada automaticamente e é iniciado o projeto

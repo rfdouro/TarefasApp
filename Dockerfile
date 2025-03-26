@@ -2,6 +2,8 @@ FROM node:20-alpine
 
 COPY . .
 
+ENV SHOST="tarefasappnode.onrender.com"
+ENV SCHEME="https"
 
 RUN npm install
 
