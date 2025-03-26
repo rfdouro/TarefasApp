@@ -23,6 +23,8 @@ const outputFile = "./swagger.json";
  * usa-se o comando:
  * npm run swagger-autogen
  */
-swaggerAutogen(outputFile, endpointsFiles).then(() => {
+swaggerAutogen(outputFile, endpointsFiles, {
+  host: 'https://tarefasappnode.onrender.com/'
+}).then(() => {
   require("./main.js");
 });
